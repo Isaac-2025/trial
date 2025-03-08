@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Link Educational Consult</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      background-image: url('bg.jpg'); /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    /* Logo Section */
+    #logo {
+      text-align: center;
+      margin: 30px 0;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    #logo img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Contact Information */
+    #contact-info {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 20px;
+      color: #007BFF;
+      font-weight: bold;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    /* Registration Section */
+    section {
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    h2 {
+      color: #007BFF;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      background-color: rgba(122, 246, 255, 0.9);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+      transform: scale(1.02);
+    }
+
+    /* Confirmation Message */
+    #confirmationMessage {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #d4edda;
+      color: #155724;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      animation: fadeIn 10s ease-in-out;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* Keyframes for Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#registration">Register</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Success Link Educational Consult</h1>
+    <p>Experts In Educational Assessment</p>
+  </header>
+
+  <!-- Logo Section -->
+  <div id="logo">
+    <img src="logo.jpg" alt="Success Link Educational Consult Logo">
+  </div>
+
+  <!-- Contact Information -->
+  <div id="contact-info">
+    Contact Us: +233 540912864
+  </div>
+
+  <!-- Registration Section -->
+  <section id="registration">
+    <h2>Register for Term 2 (2024/2025 Academic year) Exams Questions</h2>
+    
+    <div class="form-container">
+      <form id="schoolForm" action="https://formsubmit.co/Kwakuboatengisaac2@gmail.com" method="POST">
+        <!-- Hidden Fields for FormSubmit -->
+        <input type="hidden" name="_subject" value="New School Registration">
+        <input type="hidden" name="_next" value="https://isaac-2025.github.io/success-link/index.html">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+
+       
+          <input type="text" name="fullname" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+      </form>
+      
+      <!-- Confirmation Message -->
+      <p id="confirmationMessage" class="hidden">Thanks for your registration, we will contact you soon.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Success Link Educational Consult. All rights reserved. <br>Powered by Sir Isaac Takyi Boateng</p>
+  </footer>
+
+  <script>
+    document.getElementById('schoolForm').addEventListener('submit', function (event) {
+      // Display confirmation message
+      const confirmationMessage = document.getElementById('confirmationMessage');
+      confirmationMessage.style.display = 'block';
+
+      // Clear form fields
+      document.getElementById('schoolForm').reset();
+
+      // Log form data (optional)
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      console.log('Registration Details:', data);
+    });
+  </script>
+</body>
+</html>
